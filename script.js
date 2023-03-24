@@ -1,4 +1,6 @@
 const btns = document.getElementsByClassName('cell');
+const pointx = document.getElementById('pontosx');
+const pointo = document.getElementById('pontoso');
 let turn = true;
 let contadorx = 0;
 let contadoro = 0;
@@ -77,5 +79,7 @@ for (let i = 0; i < btns.length; i++) {
 
         else {
         }
+        pointx.innerHtml = "Vitórias de x: " + contadorx;
+        pointo.innerHtml = "Vitórias de o: " + contadoro;
     })
 }
